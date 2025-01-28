@@ -1,5 +1,6 @@
 import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
 import Sidebar from "./SideBar";
+import Paragraph from "./Paragraph";
 
 // Create styles
 const styles = StyleSheet.create({
@@ -25,20 +26,16 @@ const styles = StyleSheet.create({
   certificate: {
     fontSize: 12,
   },
-  top: {
-    backgroundColor: "#454545",
-    height: "20%",
-    width: "100%",
-  },
 });
 
 // Create Document Component
 const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <View style={styles.top}></View>
       <View style={styles.main}>
         <Text>Alfredo Gore</Text>
+        <Paragraph title="About me" text="Developer" />
+        <Paragraph title="Work Experience" text="Developer " />
         <View>
           <Text>Education</Text>
           <Text style={styles.skill}>
@@ -61,6 +58,10 @@ const MyDocument = () => (
               • React, NodeJS, Express & MongoDB - The MERN Fullstack Guide
             </Text>
           </View>
+        </View>
+        <View>
+          <Text>References</Text>
+          <Text style={styles.skill}>Developer</Text>
         </View>
       </View>
       <Sidebar />
