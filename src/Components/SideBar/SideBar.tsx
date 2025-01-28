@@ -1,5 +1,9 @@
 import { Image, Text, View, Link, StyleSheet } from "@react-pdf/renderer";
 import Contact from "./Contact";
+import React from "../icons/react";
+import Nextjs from "../icons/nextjs";
+import ReactNative from "../icons/react-native";
+import Tailwind from "../icons/tailwind";
 
 const styles = StyleSheet.create({
   sideBar: {
@@ -12,6 +16,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#ece3d9",
   },
   skill: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
+  },
+  skillName: {
     fontSize: 14,
   },
   link: {
@@ -33,15 +42,27 @@ export const Sidebar = () => {
       <Contact />
       <View>
         <Text>SKILLS</Text>
-        <Text style={styles.skill}>React</Text>
-        <Text style={styles.skill}>Next.js</Text>
-        <Text style={styles.skill}>React Native</Text>
-        <Text style={styles.skill}>Tailwind</Text>
+        <View style={styles.skill}>
+          <React size={12} />
+          <Text style={styles.skillName}>React</Text>
+        </View>
+        <View style={styles.skill}>
+          <Nextjs size={12} />
+          <Text style={styles.skillName}>Next.js</Text>
+        </View>
+        <View style={styles.skill}>
+          <ReactNative size={12} />
+          <Text style={styles.skillName}>React Native</Text>
+        </View>
+        <View style={styles.skill}>
+          <Tailwind size={12} />
+          <Text style={styles.skillName}>Tailwind</Text>
+        </View>
       </View>
       <View>
         <Text>LANGUAGES</Text>
-        <Text style={styles.skill}>English - C2</Text>
-        <Text style={styles.skill}>Spanish - Native</Text>
+        <Text style={styles.skillName}>English - C2</Text>
+        <Text style={styles.skillName}>Spanish - Native</Text>
       </View>
       <View>
         <Text>LINKS</Text>

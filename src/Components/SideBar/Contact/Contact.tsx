@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, Link } from "@react-pdf/renderer";
-import Mail from "@Components/icons/mail";
-import Whatsapp from "@Components/icons/whatsapp";
-import MapPin from "@Components/icons/map-pin";
+import Mail from "@components/icons/mail";
+import Whatsapp from "@components/icons/whatsapp";
+import MapPin from "@components/icons/map-pin";
 
 const styles = StyleSheet.create({
   contact: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   contactInfo: {
     fontSize: 12,
     flexDirection: "row",
-    gap: 2,
+    gap: 5,
     alignItems: "center",
   },
 });
@@ -31,9 +31,7 @@ export const Contact = () => {
       </View>
       <View style={styles.contactInfo}>
         <MapPin size={12} />
-        <Text style={styles.contactInfo}>
-          Rufino Ortega 48, Neuquén, Neuquén, Argentina
-        </Text>
+        <Text style={styles.contactInfo}>Neuquén, Argentina</Text>
       </View>
     </View>
   );

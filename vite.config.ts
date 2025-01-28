@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   resolve: {
     alias: {
-      "@Components": path.resolve(__dirname, "src/Components"),
+      "@components": path.resolve(__dirname, "src/components"),
     },
   },
 });

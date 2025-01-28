@@ -1,4 +1,4 @@
-import MyDocument from "./Components/pdf";
+import MyDocument from "./components/pdf";
 
 function App() {
   return (
