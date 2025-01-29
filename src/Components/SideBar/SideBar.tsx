@@ -1,9 +1,24 @@
-import { Image, Text, View, Link, StyleSheet } from "@react-pdf/renderer";
+import { Image, View, StyleSheet } from "@react-pdf/renderer";
 import Contact from "./Contact";
-import React from "../icons/react";
-import Nextjs from "../icons/nextjs";
-import ReactNative from "../icons/react-native";
-import Tailwind from "../icons/tailwind";
+import Skills from "./Skills";
+import Languages from "./Languages";
+import Links from "./Links";
+
+export const Sidebar = ({ showAll }: { showAll: boolean }) => {
+  return (
+    <View style={styles.sideBar}>
+      {showAll && (
+        <>
+          <Image source={"/alfred.jpeg"} style={styles.foto} />
+          <Contact />
+          <Skills />
+          <Languages />
+          <Links />
+        </>
+      )}
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   sideBar: {
@@ -15,17 +30,6 @@ const styles = StyleSheet.create({
     width: "33.3%",
     backgroundColor: "#ece3d9",
   },
-  skill: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 5,
-  },
-  skillName: {
-    fontSize: 14,
-  },
-  link: {
-    fontSize: 14,
-  },
   foto: {
     width: 150,
     height: 150,
@@ -34,48 +38,3 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
 });
-
-export const Sidebar = () => {
-  return (
-    <View style={styles.sideBar}>
-      <Image source={"/Foto.jpeg"} src={"/Foto.jpeg"} style={styles.foto} />
-      <Contact />
-      <View>
-        <Text>SKILLS</Text>
-        <View style={styles.skill}>
-          <React size={12} />
-          <Text style={styles.skillName}>React</Text>
-        </View>
-        <View style={styles.skill}>
-          <Nextjs size={12} />
-          <Text style={styles.skillName}>Next.js</Text>
-        </View>
-        <View style={styles.skill}>
-          <ReactNative size={12} />
-          <Text style={styles.skillName}>React Native</Text>
-        </View>
-        <View style={styles.skill}>
-          <Tailwind size={12} />
-          <Text style={styles.skillName}>Tailwind</Text>
-        </View>
-      </View>
-      <View>
-        <Text>LANGUAGES</Text>
-        <Text style={styles.skillName}>English - C2</Text>
-        <Text style={styles.skillName}>Spanish - Native</Text>
-      </View>
-      <View>
-        <Text>LINKS</Text>
-        <Link
-          style={styles.link}
-          href="https://www.linkedin.com/in/alfredo-gore"
-        >
-          Linkedin
-        </Link>
-        <Link style={styles.link} href="https://github.com/varrtto">
-          Github
-        </Link>
-      </View>
-    </View>
-  );
-};
