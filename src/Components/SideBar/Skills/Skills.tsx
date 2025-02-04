@@ -4,10 +4,12 @@ import Nextjs from "@components/icons/nextjs";
 import ReactNative from "@components/icons/react-native";
 import Tailwind from "@components/icons/tailwind";
 
+import { text } from "../../../translations/spanish";
+
 export const Skills = () => {
   return (
     <View style={styles.skills}>
-      <Text style={styles.title}>SKILLS</Text>
+      <Text style={styles.title}>{text.sidebar.skills.title}</Text>
       <View style={styles.skill}>
         <React size={12} />
         <Text style={styles.skillName}>React</Text>

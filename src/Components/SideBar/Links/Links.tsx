@@ -3,11 +3,12 @@ import { Text, View, Link, StyleSheet } from "@react-pdf/renderer";
 import Linkedin from "@components/icons/linkedin";
 import Github from "@components/icons/github";
 import LinkIcon from "@components/icons/link-icon";
+import { text } from "../../../translations/spanish";
 
 export const Links = () => {
   return (
     <View style={styles.links}>
-      <Text style={styles.title}>LINKS</Text>
+      <Text style={styles.title}>{text.sidebar.links.title}</Text>
       <View style={styles.link}>
         <Linkedin size={12} />
         <Link

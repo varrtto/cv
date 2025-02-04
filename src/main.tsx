@@ -1,7 +1,7 @@
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
+
 import { PDFViewer } from "@react-pdf/renderer";
 import MyDocument from "./components/pdf";
-import "typeface-roboto";
 
 export const App = () => (
   <PDFViewer width={800} height={600}>
@@ -9,4 +9,4 @@ export const App = () => (
   </PDFViewer>
 );
 
-ReactDOM.render(<App />, document.getElementById("root"));
+createRoot(document.getElementById("root")!).render(<App />);
