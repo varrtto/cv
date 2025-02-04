@@ -9,7 +9,7 @@ const WorkExperience = ({
   description: string;
 }) => {
   return (
-    <View style={styles.wrapper}>
+    <View style={styles.wrapper} wrap={false}>
       <View style={styles.title}>
         <Job size={16} color="brown" />
         <Text style={styles.titleText}>{title}</Text>

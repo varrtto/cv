@@ -37,32 +37,18 @@ const MyDocument = () => {
           <Line />
           <Paragraph title={t.about} text={t.aboutText} />
           <Paragraph title={t.relevantWorkExperience} text="" />
-          <WorkExperience
-            title={t.workExperience[0].title}
-            description={t.workExperience[0].description}
-          />
-          <WorkExperience
-            title={t.workExperience[1].title}
-            description={t.workExperience[1].description}
-          />
-          <WorkExperience
-            title={t.workExperience[2].title}
-            description={t.workExperience[2].description}
-          />
-        </View>
-        <Sidebar showAll language={t} />
-      </Page>
-      <Page size="A4" style={styles.page}>
-        <View style={styles.main}>
-          <WorkExperience
-            title={t.workExperience[3].title}
-            description={t.workExperience[3].description}
-          />
+          {t.workExperience.map((work) => (
+            <WorkExperience
+              key={work.company}
+              title={work.title}
+              description={work.description}
+            />
+          ))}
           <Paragraph title={t.education.title} text={t.education.text} />
           <Certificates language={t} />
           <References language={t} />
         </View>
-        <Sidebar showAll={false} language={t} />
+        <Sidebar showAll language={t} />
       </Page>
     </Document>
   );
