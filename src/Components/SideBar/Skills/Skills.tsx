@@ -3,13 +3,13 @@ import React from "@components/icons/react";
 import Nextjs from "@components/icons/nextjs";
 import ReactNative from "@components/icons/react-native";
 import Tailwind from "@components/icons/tailwind";
+import { Translation } from "../../../types";
 
-import { text } from "../../../translations/spanish";
-
-export const Skills = () => {
+export const Skills = ({ language }: { language: Translation }) => {
+  const t = language;
   return (
     <View style={styles.skills}>
-      <Text style={styles.title}>{text.sidebar.skills.title}</Text>
+      <Text style={styles.title}>{t.sidebar.skills.title}</Text>
       <View style={styles.skill}>
         <React size={12} />
         <Text style={styles.skillName}>React</Text>

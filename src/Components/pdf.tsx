@@ -14,7 +14,7 @@ import WorkExperience from "@components/WorkExperience";
 import Line from "@components/Line";
 import References from "@components/References";
 
-import { text } from "../translations/spanish";
+import { text } from "@translations/english";
 
 import RobotoRegular from "../fonts/Roboto-VariableFont_wdth,wght.ttf";
 
@@ -23,46 +23,50 @@ Font.register({
   src: RobotoRegular,
 });
 
-const MyDocument = () => (
-  <Document>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.main}>
-        <View style={styles.titleWrapper}>
-          <Text style={styles.name}>{text.name}</Text>
-          <Text style={styles.title}>{text.title}</Text>
+const MyDocument = () => {
+  const t = text;
+
+  return (
+    <Document>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.main}>
+          <View style={styles.titleWrapper}>
+            <Text style={styles.name}>{t.name}</Text>
+            <Text style={styles.title}>{t.title}</Text>
+          </View>
+          <Line />
+          <Paragraph title={t.about} text={t.aboutText} />
+          <Paragraph title={t.relevantWorkExperience} text="" />
+          <WorkExperience
+            title={t.workExperience[0].title}
+            description={t.workExperience[0].description}
+          />
+          <WorkExperience
+            title={t.workExperience[1].title}
+            description={t.workExperience[1].description}
+          />
+          <WorkExperience
+            title={t.workExperience[2].title}
+            description={t.workExperience[2].description}
+          />
         </View>
-        <Line />
-        <Paragraph title={text.about} text={text.aboutText} />
-        <Paragraph title={text.relevantWorkExperience} text="" />
-        <WorkExperience
-          title={text.workExperience.dialpad.title}
-          description={text.workExperience.dialpad.description}
-        />
-        <WorkExperience
-          title={text.workExperience.ranker.title}
-          description={text.workExperience.ranker.description}
-        />
-        <WorkExperience
-          title={text.workExperience.mural.title}
-          description={text.workExperience.mural.description}
-        />
-      </View>
-      <Sidebar showAll />
-    </Page>
-    <Page size="A4" style={styles.page}>
-      <View style={styles.main}>
-        <WorkExperience
-          title={text.workExperience.patagonian.title}
-          description={text.workExperience.patagonian.description}
-        />
-        <Paragraph title={text.education.title} text={text.education.text} />
-        <Certificates />
-        <References />
-      </View>
-      <Sidebar showAll={false} />
-    </Page>
-  </Document>
-);
+        <Sidebar showAll language={t} />
+      </Page>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.main}>
+          <WorkExperience
+            title={t.workExperience[3].title}
+            description={t.workExperience[3].description}
+          />
+          <Paragraph title={t.education.title} text={t.education.text} />
+          <Certificates language={t} />
+          <References language={t} />
+        </View>
+        <Sidebar showAll={false} language={t} />
+      </Page>
+    </Document>
+  );
+};
 
 const styles = StyleSheet.create({
   page: {

@@ -1,24 +1,24 @@
 import { StyleSheet, Text, View } from "@react-pdf/renderer";
 import Reference from "./Reference";
+import { Translation } from "../../types";
 
-import { text } from "../../translations/spanish";
-
-const References = () => {
+const References = ({ language }: { language: Translation }) => {
+  const t = language;
   return (
     <View style={styles.wrapper}>
-      <Text>{text.references.title}</Text>
+      <Text>{t.references.title}</Text>
       <View style={styles.referencesList}>
         <Reference
-          contact={text.references.list[0].contact}
-          phone={text.references.list[0].phone}
+          contact={t.references.list[0].contact}
+          phone={t.references.list[0].phone}
         />
         <Reference
-          contact={text.references.list[1].contact}
-          phone={text.references.list[1].phone}
+          contact={t.references.list[1].contact}
+          phone={t.references.list[1].phone}
         />
         <Reference
-          contact={text.references.list[2].contact}
-          phone={text.references.list[2].phone}
+          contact={t.references.list[2].contact}
+          phone={t.references.list[2].phone}
         />
       </View>
     </View>

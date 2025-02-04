@@ -3,17 +3,24 @@ import Contact from "./Contact";
 import Skills from "./Skills";
 import Languages from "./Languages";
 import Links from "./Links";
+import { Translation } from "../../types";
 
-export const Sidebar = ({ showAll }: { showAll: boolean }) => {
+export const Sidebar = ({
+  showAll,
+  language,
+}: {
+  showAll: boolean;
+  language: Translation;
+}) => {
   return (
     <View style={styles.sideBar}>
       {showAll && (
         <>
           <Image source={"/alfred.jpeg"} style={styles.foto} />
-          <Contact />
-          <Skills />
-          <Languages />
-          <Links />
+          <Contact language={language} />
+          <Skills language={language} />
+          <Languages language={language} />
+          <Links language={language} />
         </>
       )}
     </View>

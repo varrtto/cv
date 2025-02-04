@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
 import Certificate from "./Certificate";
+import { Translation } from "../../types";
 
-import { text } from "../../translations/spanish";
-
-const Certificates = () => {
+const Certificates = ({ language }: { language: Translation }) => {
+  const t = language;
   return (
     <View style={styles.wrapper}>
-      <Text>{text.certificates.title}</Text>
+      <Text>{t.certificates.title}</Text>
       <View style={styles.certificatesList}>
-        <Certificate text={text.certificates.list[0]} />
-        <Certificate text={text.certificates.list[1]} />
-        <Certificate text={text.certificates.list[2]} />
-        <Certificate text={text.certificates.list[3]} />
+        <Certificate text={t.certificates.list[0]} />
+        <Certificate text={t.certificates.list[1]} />
+        <Certificate text={t.certificates.list[2]} />
+        <Certificate text={t.certificates.list[3]} />
       </View>
     </View>
   );

@@ -1,4 +1,6 @@
-export const text = {
+import { Translation } from "../types";
+
+export const text: Translation = {
   name: "Alfredo Gore",
   title: "Desarrollador de Software",
   about: "Sobre mí",
@@ -6,28 +8,32 @@ export const text = {
     "Soy un desarrollador que ama construir cosas que funcionan sin problemas y se ven geniales. Tengo experiencia con tecnologías web modernas como React y Next.js, y disfruto abordando problemas complejos, optimizando el rendimiento y asegurándome de que todo funcione sin problemas. Prospero en entornos colaborativos, siempre buscando aprender cosas nuevas y mejorar mi oficio. Ya sea frontend, backend o algo intermedio, me entusiasma crear soluciones impactantes y bien elaboradas.",
 
   relevantWorkExperience: "Experiencia Laboral Relevante",
-  workExperience: {
-    dialpad: {
+  workExperience: [
+    {
+      company: "Dialpad",
       title: "Dialpad - Desarrollador Web",
       description:
         "Como Desarrollador Web en Dialpad, donde trabajé principalmente con Next.js y React para construir y optimizar nuestras aplicaciones web. Mi enfoque fue mejorar la experiencia frontend, asegurando una navegación fluida, rendimiento y accesibilidad en todas nuestras plataformas. Trabajé con App Router en Next.js, manejando parámetros de consulta dinámicos para un enrutamiento más limpio y escalable.",
     },
-    ranker: {
+    {
+      company: "Ranker",
       title: "Ranker - Ingeniero de Software Senior",
       description:
         "En Ranker, trabajé como Ingeniero de Software Senior, desarrollando y optimizando componentes de UI interactivos usando React dentro del framework Next.js. Contribuí a la escalabilidad y mantenibilidad de la plataforma de Ranker construyendo una biblioteca de componentes estructurada, completamente documentada en Storybook para una integración perfecta en todo el sitio. Para asegurar un alto nivel de confiabilidad, escribí y mantuve pruebas unitarias y de integración completas usando Jest, enfocándome en el rendimiento y la consistencia de la UI. También trabajé en implementaciones de pruebas A/B, ayudando a la empresa a refinar sus estrategias de participación probando diferentes variaciones de UI y mejorando la interacción del usuario basada en análisis.",
     },
-    mural: {
+    {
+      company: "Mural",
       title: "Mural - Ingeniero de Software",
       description:
         "Desarrollador Full Stack. Mi rol era escribir y estilizar los componentes frontend que cumplieran con los requisitos de nuestros mockups y satisficieran nuestras historias de usuario, escribir APIs funcionales, etc. Usando: React, Node, CSS",
     },
-    patagonian: {
+    {
+      company: "Patagonian Tech",
       title: "Patagonian Tech - Ingeniero de Software",
       description:
         "Desarrollador principal en una aplicación React Native, construyendo para iOS y Android, usando expo. - Construí docenas de Componentes en React Native, incluyendo encabezados, deslizadores, modales, widgets, filtros, tarjetas, formularios, etc. - Trabajé codo a codo con diseñadores, PMs y el cliente para encontrar las mejores soluciones posibles. - Estimé y ayudé a los PMs a planificar, creé tickets y documenté procesos, componentes y requisitos.",
     },
-  },
+  ],
   education: {
     title: "Educación",
     text: "Analista en Ciencias de la Computación (Esperado 2025)",
