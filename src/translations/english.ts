@@ -12,7 +12,7 @@ export const text: Translation = {
       company: "Dialpad",
       title: "Dialpad - Web Developer",
       description:
-        "As a Web Developer at Dialpad, where I worked primarily with Next.js and React to build and optimize our web applications. My focus was on improving the frontend experience, ensuring seamless navigation, performance, and accessibility across our platforms. worked with App Router in Next.js, handling dynamic query parameters for cleaner, more scalable routing. I also troubleshooted Browser-specific UI issues, optimized CSS behaviors and integrated tools.",
+        "As a Web Developer at Dialpad, where I worked primarily with Next.js and React to build and optimize our web applications. My focus was on improving the frontend experience, ensuring seamless navigation, performance, and accessibility across our platforms. worked with App Router in Next.js, handling dynamic query parameters for cleaner, more scalable routing. I also troubleshooted Browser-specific UI issues.",
     },
     {
       company: "Ranker",

@@ -8,10 +8,9 @@ const Certificates = ({ language }: { language: Translation }) => {
     <View style={styles.wrapper}>
       <Text>{t.certificates.title}</Text>
       <View style={styles.certificatesList}>
-        <Certificate text={t.certificates.list[0]} />
-        <Certificate text={t.certificates.list[1]} />
-        <Certificate text={t.certificates.list[2]} />
-        <Certificate text={t.certificates.list[3]} />
+        {t.certificates.list.map((text) => (
+          <Certificate text={text} />
+        ))}
       </View>
     </View>
   );
