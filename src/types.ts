@@ -4,7 +4,12 @@ export type Translation = {
   about: string;
   aboutText: string;
   relevantWorkExperience: string;
-  workExperience: { company: string; title: string; description: string }[];
+  workExperience: {
+    company: string;
+    title: string;
+    date: string;
+    description: string;
+  }[];
   education: {
     title: string;
     text: string;

@@ -12,24 +12,28 @@ export const text: Translation = {
     {
       company: "Dialpad",
       title: "Dialpad - Desarrollador Web",
+      date: "Oct 2023/Jan 2025",
       description:
         "Como Desarrollador Web en Dialpad, donde trabajé principalmente con Next.js y React para construir y optimizar nuestras aplicaciones web. Mi enfoque fue mejorar la experiencia frontend, asegurando una navegación fluida, rendimiento y accesibilidad en todas nuestras plataformas. Trabajé con App Router en Next.js, manejando parámetros de consulta dinámicos para un enrutamiento más limpio y escalable.",
     },
     {
       company: "Ranker",
       title: "Ranker - Ingeniero de Software Senior",
+      date: "Feb 2022/Oct 2023",
       description:
         "En Ranker, trabajé como Ingeniero de Software Senior, desarrollando y optimizando componentes de UI interactivos usando React dentro del framework Next.js. Contribuí a la escalabilidad y mantenibilidad de la plataforma de Ranker construyendo una biblioteca de componentes estructurada, completamente documentada en Storybook para una integración perfecta en todo el sitio. Para asegurar un alto nivel de confiabilidad, escribí y mantuve pruebas unitarias y de integración completas usando Jest, enfocándome en el rendimiento y la consistencia de la UI. También trabajé en implementaciones de pruebas A/B, ayudando a la empresa a refinar sus estrategias de participación probando diferentes variaciones de UI y mejorando la interacción del usuario basada en análisis.",
     },
     {
       company: "Mural",
       title: "Mural - Ingeniero de Software",
+      date: "Jul 2020/Feb 2022",
       description:
         "Desarrollador Full Stack. Mi rol era escribir y estilizar los componentes frontend que cumplieran con los requisitos de nuestros mockups y satisficieran nuestras historias de usuario, escribir APIs funcionales, etc. Usando: React, Node, CSS",
     },
     {
       company: "Patagonian Tech",
       title: "Patagonian Tech - Ingeniero de Software",
+      date: "Jun 2019/Jul 2020",
       description:
         "Desarrollador principal en una aplicación React Native, construyendo para iOS y Android, usando expo. - Construí docenas de Componentes en React Native, incluyendo encabezados, deslizadores, modales, widgets, filtros, tarjetas, formularios, etc. - Trabajé codo a codo con diseñadores, PMs y el cliente para encontrar las mejores soluciones posibles. - Estimé y ayudé a los PMs a planificar, creé tickets y documenté procesos, componentes y requisitos.",
     },
@@ -80,7 +84,7 @@ export const text: Translation = {
     },
     contact: {
       title: "CONTACTO",
-      email: "alfredo.gore@email.com",
+      email: "alfredo.gore@gmail.com",
       phone: "+54 (299) 622-3031",
       location: "Neuquén, Argentina",
     },

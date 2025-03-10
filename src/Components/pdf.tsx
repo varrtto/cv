@@ -41,6 +41,7 @@ const MyDocument = () => {
             <WorkExperience
               key={work.company}
               title={work.title}
+              date={work.date}
               description={work.description}
             />
           ))}

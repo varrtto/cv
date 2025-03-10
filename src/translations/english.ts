@@ -11,24 +11,28 @@ export const text: Translation = {
     {
       company: "Dialpad",
       title: "Dialpad - Web Developer",
+      date: "Oct 2023/Jan 2025",
       description:
         "As a Web Developer at Dialpad, where I worked primarily with Next.js and React to build and optimize our web applications. My focus was on improving the frontend experience, ensuring seamless navigation, performance, and accessibility across our platforms. worked with App Router in Next.js, handling dynamic query parameters for cleaner, more scalable routing. I also troubleshooted Browser-specific UI issues.",
     },
     {
       company: "Ranker",
       title: "Ranker - Senior Software Engineer",
+      date: "Feb 2022/Oct 2023",
       description:
         "At Ranker, I worked as a Senior Software Engineer, developing and optimizing interactive UI components using React within the Next.js framework. I contributed to the scalability and maintainability of Ranker’s platform by building a structured component library, fully documented in Storybook for seamless integration across the site. To ensure a high level of reliability, I wrote and maintained comprehensive unit and integration tests using Jest, focusing on performance and UI consistency. Given Ranker’s data-driven approach, I also worked on A/B testing implementations, helping the company refine its engagement strategies by testing different UI variations and improving user interaction based on analytics. Working closely with product managers, designers, and other engineers, I helped enhance Ranker’s voting-based platform, ensuring an intuitive and engaging user experience for millions of visitors.",
     },
     {
       company: "Mural",
       title: "Mural - Software Engineer",
+      date: "Jul 2020/Feb 2022",
       description:
         "Full Stack developer. My role was to write and style the front-end components that meet the requirements of our mocks and fulfil our user stories, write beautiful APIs and more! (Code reviews, bugfixing, you name it) Using: React, Node, CSS",
     },
     {
       company: "Patagonian Tech",
       title: "Patagonian Tech - Software Engineer",
+      date: "Jun 2019/Jul 2020",
       description:
         "Main developer in a React Native app, building for iOS and Android, using expo. - Built dozens of Components in React Native, including headers, sliders, modals, widgets, filters, cards, forms, etc. - Worked side by side with designers, PMs and the customer to find the best solutions possible. - Estimated and helped PMs to plan ahead, created tickets, and documented processes, components and requirements.",
     },
@@ -79,7 +83,7 @@ export const text: Translation = {
     },
     contact: {
       title: "CONTACT",
-      email: "alfredo.gore@email.com",
+      email: "alfredo.gore@gmail.com",
       phone: "+54 (299) 622-3031",
       location: "Neuquén, Argentina",
     },

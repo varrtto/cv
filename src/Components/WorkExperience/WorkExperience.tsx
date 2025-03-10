@@ -3,16 +3,20 @@ import { StyleSheet, Text, View } from "@react-pdf/renderer";
 
 const WorkExperience = ({
   title,
+  date,
   description,
 }: {
   title: string;
+  date: string;
   description: string;
 }) => {
   return (
     <View style={styles.wrapper} wrap={false}>
       <View style={styles.title}>
         <Job size={16} color="brown" />
-        <Text style={styles.titleText}>{title}</Text>
+        <Text style={styles.titleText}>
+          {title} - {date}
+        </Text>
       </View>
       <Text style={styles.description}>{description}</Text>
     </View>
